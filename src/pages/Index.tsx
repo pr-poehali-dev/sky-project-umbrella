@@ -26,7 +26,7 @@ const Index = () => {
     >
       <div className="antialiased max-w-screen min-h-svh bg-slate-1 text-slate-12">
         <MeshGradient
-          colors={["#001c80", "#1ac7ff", "#04ffb1", "#ff1ff1"]}
+          colors={["#0f0326", "#7c3aed", "#06b6d4", "#ec4899"]}
           style={{
             position: "fixed",
             top: 0,
@@ -41,30 +41,30 @@ const Index = () => {
             <main className="flex justify-center">
               <WaitlistWrapper
                 logo={{
-                  src: "/logo.svg",
-                  alt: "Launchpad",
+                  src: "https://cdn.poehali.dev/projects/3b7b13f1-8ac2-4765-a8d4-b540aa45a6e1/files/6b12bf69-455a-4201-b997-02bca8319f68.jpg",
+                  alt: "Game Logo",
                 }}
-                copyright="При поддержке"
-                copyrightLink={{ text: "Ваша компания", href: "#" }}
+                copyright="Разработано"
+                copyrightLink={{ text: "нашей студией", href: "#" }}
                 showThemeSwitcher={true}
               >
                 <div className="space-y-1">
                   <h1 className="text-2xl sm:text-3xl font-medium text-slate-12 whitespace-pre-wrap text-pretty">
-                    Лист ожидания
+                    Закрытый бета-тест
                   </h1>
                   <p className="text-slate-10 tracking-tight text-pretty">
-                    Узнайте первыми о запуске. Получите ранний доступ и
-                    эксклюзивные обновления.
+                    Мы запускаем новую игру и открываем ранний доступ. Оставьте
+                    email — и вы одними из первых получите ключ в бету.
                   </p>
                 </div>
                 <div className="px-1 flex flex-col w-full self-stretch">
                   <WaitlistForm
                     onSubmit={handleSubmit}
-                    placeholder="Введите email"
+                    placeholder="Введите ваш email"
                     buttonCopy={{
-                      idle: "Записаться",
+                      idle: "Хочу в бету",
                       loading: "Отправка...",
-                      success: "Готово!",
+                      success: "Вы в списке!",
                     }}
                   />
                 </div>
