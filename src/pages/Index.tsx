@@ -38,7 +38,7 @@ const Index = () => {
             backgroundPosition: "center",
           }}
         />
-        <div className="fixed inset-0 z-[0] bg-black/30" />
+        <div className="fixed inset-0 z-[0] bg-white/20" />
         <div className="max-w-screen-sm mx-auto w-full relative z-[1] flex flex-col min-h-screen items-center justify-center">
           <div className="px-5 gap-8 flex flex-col">
             <main className="flex justify-center">
