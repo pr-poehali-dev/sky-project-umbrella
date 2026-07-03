@@ -12,6 +12,8 @@ const Index = () => {
     console.log("Submitting email:", email);
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
+    window.open("https://t.me/wa1nt_me11", "_blank");
+
     // Demo: always succeed
     return { success: true };
   };
