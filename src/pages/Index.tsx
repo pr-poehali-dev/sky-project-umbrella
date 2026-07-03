@@ -2,7 +2,6 @@ import { ThemeProvider } from "next-themes";
 import {
   WaitlistForm,
   WaitlistWrapper,
-  MeshGradient,
 } from "@/components/waitlist";
 
 const Index = () => {
@@ -25,8 +24,7 @@ const Index = () => {
       disableTransitionOnChange
     >
       <div className="antialiased max-w-screen min-h-svh bg-slate-1 text-slate-12">
-        <MeshGradient
-          colors={["#0f0326", "#7c3aed", "#06b6d4", "#ec4899"]}
+        <div
           style={{
             position: "fixed",
             top: 0,
@@ -34,8 +32,13 @@ const Index = () => {
             zIndex: 0,
             width: "100%",
             height: "100%",
+            backgroundImage:
+              "url(https://cdn.poehali.dev/projects/3b7b13f1-8ac2-4765-a8d4-b540aa45a6e1/bucket/9576c6c0-f4c0-405a-b580-dff1f6263837.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         />
+        <div className="fixed inset-0 z-[0] bg-black/30" />
         <div className="max-w-screen-sm mx-auto w-full relative z-[1] flex flex-col min-h-screen items-center justify-center">
           <div className="px-5 gap-8 flex flex-col">
             <main className="flex justify-center">
